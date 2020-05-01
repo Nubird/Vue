@@ -1,0 +1,11 @@
+reset.css
+重置页面样式，不同手机浏览器的默认样式不一样，reset.css统一各个浏览器的样式
+
+border.css
+对于高分辨率的手机，如二倍屏，使用1px时，会显示2px；该css文件可以解决该问题
+
+移动端项目中，经常会遇到300ms点击延迟问题；
+在某些机型和浏览器上，触发click事件时，该事件会延迟300ms；
+解决：引入fastclick库
+
+npm install fastclick --save    (--save表示不管在开发环境还是线上代码，都是用fastclick )
