@@ -9,3 +9,6 @@ border.css
 解决：引入fastclick库
 
 npm install fastclick --save    (--save表示不管在开发环境还是线上代码，都是用fastclick )
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+引用第三方的库，方便构建轮播图

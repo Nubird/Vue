@@ -14,8 +14,10 @@
     "fastclick": "^1.0.6",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "swiper": "^5.3.8",
     "undefined": "^0.1.0",
     "vue": "^2.5.2",
+    "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
