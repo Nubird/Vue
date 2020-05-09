@@ -12,3 +12,17 @@ npm install fastclick --save    (--save表示不管在开发环境还是线上代码，都是用fas
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 引用第三方的库，方便构建轮播图
+
+
+分支上传代码及合并
+1、常规操作，将代码上传到对应的分支
+git add .
+git commit -m 'xxx'
+git push
+
+2、先切换master，再把新增的内容合并到master分支
+git checkout master
+git merge origin/index-swiper
+
+3、提交到线上
+git push origin master

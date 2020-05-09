@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
 	<swiper :options="swiperOptions">
-    	<swiper-slide v-for="item of swiperList" key="item.id" data-swiper-autoplay="2000">
+    	<swiper-slide v-for="item of swiperList" :key="item.id" data-swiper-autoplay="2000">
     	<img class="swiper-img" :src="item.img"/>
     	</swiper-slide>
     	
