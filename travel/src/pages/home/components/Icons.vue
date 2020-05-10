@@ -86,7 +86,8 @@ export default{
 		overflow:hidden
 		width:100%
 		height:0
-		padding-bottom:50%/*icons占比高度是50%，即宽度的50%*/
+		padding-bottom:35%/*icons占比高度是50%，即宽度的50%*/
+		padding-top:3%
 
 		.icon
 			position:relative
@@ -94,7 +95,7 @@ export default{
 			float:left
 			width:25%/*宽度是25%*/
 			height:0
-			padding-bottom:25%/*高度也是25%*/
+			padding-bottom:17%/*高度也是25%*/
 
 			.icon-img
 				position:absolute
