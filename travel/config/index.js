@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        //项目中使用/api时，映射为另一个路径;这个功能并不是vue提供，而是webpack-dev-server
+        '/api':{
+            target:'http://localhost:8080',
+            pathRewrite:{
+                '^/api':'/static/mock'
+            }
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

@@ -1,6 +1,6 @@
 <template>
 	<div class="icons">
-		<swiper>
+		<swiper :options="swiperOptions">
 		<swiper-slide v-for="(page,index) of pages" :key="index">
 		<div 
 			class="icon"
@@ -21,51 +21,20 @@
 <script>
 export default{
 	name:'HomeIcons',
+	props:{
+		list:Array
+	},
 	data(){
 		return {
-			iconList:[{
-				id:"1",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-				desc:"景点门票"
-			},{
-				id:"2",
-				src:"http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
-				desc:"广州必游"
-			},{
-				id:"3",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
-				desc:"城市赏花"
-			},{
-				id:"4",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png",
-				desc:"动植物园"
-			},{
-				id:"5",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
-				desc:"珠江夜游"
-			},{
-				id:"6",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
-				desc:"城市观光"
-			},{
-				id:"7",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png",
-				desc:"主题乐园"
-			},{
-				id:"8",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
-				desc:"泡温泉"
-			},{
-				id:"9",
-				src:"http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
-				desc:"洗洗睡"
-			}]
+			swiperOptions:{
+				autoplay:false
+			}
 		}
 	},
 	computed: {//将一维的数组拆分为二维的数组，每一列正好是8个icon
 		pages(){
 			const pages =[]
-			this.iconList.forEach((item,index)=>{
+			this.list.forEach((item,index)=>{
 				const page=Math.floor(index/8)/*向下取整*/
 				if (!pages[page]) {//page不存在
 					pages[page]=[]
