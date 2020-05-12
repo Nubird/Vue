@@ -7,10 +7,12 @@
 		<span class="iconfont">&#xe621;</span>
 		输入城市/景点/游玩主题
 	</div>
+	<router-link to="/city">
 	<div class="header-right">
 		{{this.city}}
 		<span class="iconfont map-icon">&#xe758;</span>	
 	</div>
+	</router-link>
 </div>
 
 </template>
@@ -30,7 +32,7 @@ export default{
 <style lang="stylus" scoped>
 	@import '~styles/variables.styl'
 	.header
-		line-height:.86rem
+		line-height:$headerHeight
 		display:flex
 		background:$bgColor
 		color:#fff
@@ -53,6 +55,7 @@ export default{
 			width:1.24rem
 			float:right
 			text-align:center
+			color:#fff
 			.map-icon
 				margin-left:-.1rem
 				font-size:.30rem

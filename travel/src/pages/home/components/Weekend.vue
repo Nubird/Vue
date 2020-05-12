@@ -55,6 +55,6 @@ export default{
 			ellipsis()
 		.item-desc
 			line-height:.4rem
-			color:#ccc
+			color:#333
 			ellipsis()			
 </style>
