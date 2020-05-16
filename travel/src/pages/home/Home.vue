@@ -20,6 +20,7 @@ import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 
 import axios from 'axios'
+import { mapState } from 'vuex'
 export default{
   name: 'Home',
   components:{
@@ -32,6 +33,7 @@ export default{
   data(){
     return {
       // city:'',
+      lastCity:'',
       swiperList:[],
       iconList:[],
       recommendList:[],
@@ -40,7 +42,7 @@ export default{
   },
   methods:{
   	getHomeInfo(){
-  		axios.get('/api/index.json').then(this.getHomeInfoSucc)
+  		axios.get('/api/index.json?city='+this.city).then(this.getHomeInfoSucc)
       //json文件中不要添加注释
   	},
   	getHomeInfoSucc(res){
@@ -56,8 +58,22 @@ export default{
       }
   	}
   },
+  computed:{
+    ...mapState(['city'])
+  },
   mounted(){
+    // console.log('mounted')
+    this.lastCity=this.city
   	this.getHomeInfo()
+  },
+  // 使用keep-alive标签时，组件里会多出一个生命周期函数
+  // 初次渲染后，再进入相同路由时，mounted不会再被执行，而是直接从内存中获取数据；但会执行activated
+  activated(){
+    // console.log('activated')
+    if (this.lastCity!==this.city) {
+      this.lastCity=this.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>
