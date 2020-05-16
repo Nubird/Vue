@@ -9,6 +9,7 @@
 	</div>
 	<router-link to="/city">
 	<div class="header-right">
+		<!-- {{this.city}} -->
 		{{this.city}}
 		<span class="iconfont map-icon">&#xe758;</span>	
 	</div>
@@ -18,11 +19,17 @@
 </template>
 
 <script type="text/javascript">
+import { mapState } from 'vuex' 
 //home是总的页面，component文件夹中包含主页里的各个部分
 export default{
   name: 'HomeHeader',
-  props:{
-  	city:String
+  // props:{
+  // 	city:String
+  // }
+  computed:{
+  	//mapstate把vuex的数据映射到这个组件的computed计算属性里，把city这个公用数据映射到
+  	//一个名字叫city 的计算属性中
+  	...mapState(['city'])
   }
 }
 </script>
@@ -52,7 +59,8 @@ export default{
 			line-height:.64rem
 			color:#ccc
 		.header-right
-			width:1.24rem
+			min-width:1.04rem
+			padding:0 .1rem
 			float:right
 			text-align:center
 			color:#fff

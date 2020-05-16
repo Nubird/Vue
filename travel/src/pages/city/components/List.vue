@@ -5,7 +5,7 @@
 			<div class="title border-topbottom">当前城市</div>
 			<div class="button-list">
 				<div class="button-wrapper">
-					<div class="button">广州</div>
+					<div class="button">{{this.currentCity}}</div>
 				</div>
 			</div>
 		</div>
@@ -13,7 +13,12 @@
 		<div class="area">
 			<div class="title border-topbottom">热门城市</div>
 			<div class="button-list">
-				<div class="button-wrapper" v-for="item of hot" :key="item.id">
+				<div
+				class="button-wrapper"
+				v-for="item of hot"
+				:key="item.id"
+				@click="handleCityClick(item.name)"
+				>
 					<div class="button">{{item.name}}</div>
 				</div>
 			</div>
@@ -31,6 +36,7 @@
 				class="item border-bottom"
 				v-for="innerItem of item"
 				:key="innerItem.id"
+				@click="handleCityClick(innerItem.name)"
 				>
 					{{innerItem.name}}
 				</div>
@@ -41,6 +47,7 @@
 </template>
 
 <script>
+import { mapState,mapMutations } from 'vuex' 	
 import Bscroll from "better-scroll"
 export default{
 	name:"CityList",
@@ -52,6 +59,22 @@ export default{
 		cities:Object,
 		letter:String
 	},
+	methods:{
+		handleCityClick(city){
+			//触发一个点击事件，传递参数city
+			//this.$store.commit('changeCity',city)等价于下列代码和map系列
+			this.changeCity(city)
+			this.$router.push('/')
+		},
+		...mapMutations(['changeCity'])
+	},
+	computed:{
+  	//mapstate把vuex的公用数据city映射到计算属性里，
+  	//映射过来的名字为currentCity
+  	...mapState({
+  		currentCity:'city'
+  	})
+  },
 	// 监听器，当letter改变则执行函数
 	watch:{
 		letter(){

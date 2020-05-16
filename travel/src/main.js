@@ -10,16 +10,20 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 // import style
 import 'swiper/css/swiper.css'
+//
+import store from './store/index.js'
 
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)
 
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,//键和值一样
   components: { App },
   // 等价于{App:App},键和值相同时，可以只写一个
   template: '<App/>'
