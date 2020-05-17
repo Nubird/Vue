@@ -39,6 +39,7 @@ export default{
 			//触发一个点击事件，传递参数city
 			//this.$store.commit('changeCity',city)等价于下列代码和map系列
 			this.changeCity(city)
+			this.keyword=''
 			this.$router.push('/')
 		},
 		...mapMutations(['changeCity'])
