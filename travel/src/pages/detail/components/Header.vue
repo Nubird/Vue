@@ -34,6 +34,7 @@ export default{
 	},
 	methods:{
 		handleScroll(){
+			console.log("scroll")
 			const top=document.documentElement.scrollTop
 			if (top > 10) {
 				let opacity = top / 140
@@ -51,6 +52,11 @@ export default{
 	// 因为在App.vue中使用keepalive，所以只要页面被展示，activated函数就会被执行
 	activated(){
 		window.addEventListener('scroll',this.handleScroll)
+	},
+	//离开页面时，执行该生命周期函数
+	deactivated(){
+		//activated函数中绑定在window下，属于全局变量，需要解绑，防止影响到其他页面
+		window.removeEventListener('scroll',this.handleScroll)
 	}
 }
 </script>
