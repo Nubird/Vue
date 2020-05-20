@@ -20,5 +20,9 @@ export default new Router({
     	path:'/detail/:id',
     	name:'Detail',
     	component:Detail
-    }]
+    }],
+    //页面切换时，始终显示在最顶部
+    scrollBehavior (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
 })
