@@ -101,7 +101,7 @@ export default{
 	.list
 		overflow:hidden
 		position:absolute
-		top:2.78rem
+		top:1.60rem
 		right:0
 		bottom:0
 		left:0

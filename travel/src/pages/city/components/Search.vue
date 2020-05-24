@@ -88,8 +88,8 @@ export default{
 		height:.72rem
 		padding:0 .1rem
 		.search-input
-			// box-sizing:border-box
-			// padding:0.1rem
+			box-sizing:border-box
+			padding:0.1rem
 			width:100%
 			height:.62rem
 			line-height:.62rem
