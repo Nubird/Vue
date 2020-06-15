@@ -2,16 +2,17 @@
 	<div class="icons">
 		<swiper :options="swiperOptions">
 		<swiper-slide v-for="(page,index) of pages" :key="index">
-		<div 
+		<router-link 
 			class="icon"
 			v-for="item of page"
 			:key="item.id"
+			:to="'/category/'+item.id"
 		>
 			<div class="icon-img">
 				<img class="icon-img-content" :src="item.src"/>
 			</div>
 			<p class="icon-desc">{{item.desc}}</p>
-		</div>
+		</router-link>
 		</swiper-slide>
 		</swiper>
 	</div>
