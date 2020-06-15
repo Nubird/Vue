@@ -9,13 +9,22 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/',//原来是一个斜杠
     proxyTable: {
-        //项目中使用/api时，映射为另一个路径;这个功能并不是vue提供，而是webpack-dev-server
+        //上线后，proxy不生效
+        //在开发环境下，项目访问/api路径，会将这个请求转到localhost：80;这个功能并不是vue提供，而是webpack-dev-server
         '/api':{
+            // target:'http://localhost:80',
+            // // changeOrigin:true,
+            // pathRewrite:{
+            //     //映射到后端环境的地址
+            //     '^/api':'/Travel/api'
+            // }
             target:'http://localhost:8080',
+            // changeOrigin:true,
             pathRewrite:{
-                '^/api':'/static/mock'
+                //映射到后端环境的地址
+                '^/api':'./static/api'
             }
         }
     },

@@ -12,7 +12,7 @@
 		class="header-fixed"
 		v-show="!showAbs"
 		:style="opacityStyle">
-			景点详情
+			菜单详情
 			<router-link to="/">
 				<div class="iconfont header-fixed-back">&#xe743;</div>
 			</router-link>

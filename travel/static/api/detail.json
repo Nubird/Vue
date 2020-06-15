@@ -1,0 +1,118 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "爆款美食推荐",
+    "bannerImg": "static/image/detail/hot/d1.jpg",
+    "gallaryImgs": ["static/image/detail/hot/d1.jpg", "static/image/detail/hot/d2.jpg","static/image/detail/hot/d3.jpg"],
+    "categoryList": [{
+        "title": "家常菜",
+        "children": [
+          {
+          "src":"static/image/detail/home/h1.jpg",
+          "title": "豉香蒸排骨",
+          "material":"豆豉，排骨",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/home/h2.png",
+          "title": "红烧茄子",
+          "material":"新鲜茄子",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/home/h3.jpg",
+          "title": "红烧肉",
+          "material":"猪肉，糖",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/home/h4.jpg",
+          "title": "韭菜炒鸡蛋",
+          "material":"韭菜，鸡蛋",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/home/h5.jpg",
+          "title": "靓鸡汤",
+          "material":"鸡，米饭",
+          "price":"￥25.8"
+        }]
+      }, 
+
+      {
+        "title": "小吃",
+        "children": [{
+          "src":"static/image/detail/snack/s9.jpg",
+          "title": "菜名1",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s8.jpg",
+          "title": "菜名2",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s7.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s6.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s5.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s4.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s3.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s2.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/snack/s1.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        }]
+      },
+
+      {
+        "title": "饮料",
+        "children": [{
+          "src":"static/image/detail/drink/d1.jpg",
+          "title": "菜名1",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/drink/d2.jpg",
+          "title": "菜名2",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/drink/d3.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/drink/d4.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        },{
+          "src":"static/image/detail/drink/d5.jpg",
+          "title": "菜名3",
+          "material":"猪肉，米饭",
+          "price":"￥25.8"
+        }]
+      }]
+  }
+}

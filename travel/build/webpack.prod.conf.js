@@ -23,6 +23,12 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
+    //Vue项目打包到Tomcat中空白现象
+    //原因：由于webpack打包引入css js等文件路径为绝对路径
+    //导致tomcat等web server相对路径访问不到而出现空白页和ERR_ABORTED错误。
+
+    publicPath:'./',
+    //解决方法：1、在build/webpack.prod.conf.js中增加publicPath:'./'
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')

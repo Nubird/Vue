@@ -24,6 +24,12 @@ export default new Router({
     	name:'Detail',
       component: () => import('@/pages/detail/Detail')
     	// component:Detail
+    },{
+      // 动态路由，跟随一个id
+      path:'/category/:id',
+      name:'Category',
+      component: () => import('@/pages/category/Category')
+      // component:Detail
     }],
     //页面切换时，始终显示在最顶部
     scrollBehavior (to, from, savedPosition) {

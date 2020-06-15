@@ -76,7 +76,7 @@ export default{
 		}
 	},
 	mounted () {
-		this.scroll=new Bscroll(this.$refs.search)
+		this.scroll=new Bscroll(this.$refs.search,{click:true})
 	}
 }
 </script>
@@ -100,7 +100,7 @@ export default{
 		z-index:1
 		overflow:hidden
 		position:absolute
-		top:2.78rem
+		top:1.68rem
 		left:0
 		right:0
 		bottom:0

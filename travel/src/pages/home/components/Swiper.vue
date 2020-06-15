@@ -2,7 +2,9 @@
 <div class="wrapper">
 	<swiper :options="swiperOptions" v-if="showSwiper">
     	<swiper-slide v-for="item of list" :key="item.id" data-swiper-autoplay="2000">
-    	<img class="swiper-img" :src="item.img"/>
+      <router-link :to="'/detail/'+item.id">
+    	   <img class="swiper-img" :src="item.img"/>
+      </router-link>
     	</swiper-slide>
     	
     	<div class="swiper-pagination" slot="pagination"></div>
@@ -49,7 +51,7 @@ export default{
 		overflow:hidden
 		width:100%
 		height:0
-		padding-bottom:31.25%
+		padding-bottom:45%
      
 		.swiper-img
 			width:100%       

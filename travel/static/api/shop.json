@@ -1,0 +1,124 @@
+{
+	"ret":true,
+
+
+	"data":{
+		"kindList":[{
+				"id": "1",
+				"kind": "正餐"
+			},{
+				"id": "2",
+				"kind": "特色小吃"
+			},{
+				"id": "3",
+				"kind": "甜品饮品"
+			},{
+				"id": "4",
+				"kind": "汉堡披萨"
+			},{
+				"id": "5",
+				"kind": "炸鸡炸串"
+			},{
+				"id": "6",
+				"kind": "烧烤"
+			},{
+				"id": "7",
+				"kind": "米粉面馆"
+			},{
+				"id": "8",
+				"kind": "下午茶"
+			},{
+				"id": "9",
+				"kind": "海鲜"
+			},{
+				"id": "10",
+				"kind": "自助餐"
+			}],
+
+
+		"sortList":[{
+			"id": "1",
+			"sort": "默认排序"
+		},{
+			"id": "2",
+			"sort": "离我最近"
+		},{
+			"id": "3",
+			"sort": "人气最高"
+		}],
+
+
+		"storeList":[{
+				"id":"1",
+				"src":"static/image/recommend/rec4.jpg",
+				"title":"初乐韩国烧烤自助餐厅",
+				"score":"4.5分",
+				"price":"￥50/人",
+				"type":"自助餐 烧烤",
+				"dist":"925m",
+				"tag":"正常营业 配菜美味 餐厅高档",
+				"desc":"食物很新鲜，味道不错，菜品超级棒，服务非常周到，龙虾鲜嫩爽口，五花肥而不腻"
+			},{
+				"id":"2",
+				"src":"static/image/recommend/rec2.jpg",
+				"title":"海底捞火锅",
+				"score":"4.5分",
+				"price":"￥80/人",
+				"type":"石湾 火锅",
+				"dist":"925m",
+				"tag":"正常营业 配菜可以 牛肉不错",
+				"desc":"菜品口感新鲜，慢慢的牛肉味，一如既往地不错"
+			},{
+				"id":"3",
+				"src":"static/image/recommend/rec3.jpg",
+				"title":"东灶鱼头火锅",
+				"score":"4.9分",
+				"price":"￥98/人",
+				"type":"容桂 火锅 烧烤",
+				"dist":"925m",
+				"tag":"鱼头好吃 茶好喝 朋友聚餐",
+				"desc":"菜品口感新鲜，慢慢的牛肉味，一如既往地不错"
+			},{
+				"id":"4",
+				"src":"static/image/recommend/rec4.jpg",
+				"title":"海底捞火锅",
+				"score":"4.5分",
+				"price":"￥80/人",
+				"type":"石湾 火锅",
+				"dist":"925m",
+				"tag":"正常营业 配菜可以 牛肉不错",
+				"desc":"菜品口感新鲜，慢慢的牛肉味，一如既往地不错"
+			},{
+				"id":"5",
+				"src":"static/image/recommend/rec5.jpg",
+				"title":"东灶鱼头火锅",
+				"score":"4.9分",
+				"price":"￥98/人",
+				"type":"容桂 火锅 烧烤",
+				"dist":"925m",
+				"tag":"鱼头好吃 茶好喝 朋友聚餐",
+				"desc":"菜品口感新鲜，慢慢的牛肉味，一如既往地不错"
+			},{
+				"id":"6",
+				"src":"static/image/recommend/rec6.jpg",
+				"title":"海底捞火锅",
+				"score":"4.5分",
+				"price":"￥80/人",
+				"type":"石湾 火锅",
+				"dist":"925m",
+				"tag":"正常营业 配菜可以 牛肉不错",
+				"desc":"菜品口感新鲜，慢慢的牛肉味，一如既往地不错"
+			},{
+				"id":"7",
+				"src":"static/image/recommend/rec2.jpg",
+				"title":"东灶鱼头火锅",
+				"score":"4.9分",
+				"price":"￥98/人",
+				"type":"容桂 火锅 烧烤",
+				"dist":"925m",
+				"tag":"鱼头好吃 茶好喝 朋友聚餐",
+				"desc":"菜品口感新鲜，慢慢的牛肉味，一如既往地不错"
+			}]
+
+	}
+}
