@@ -17,7 +17,7 @@
     "compression-webpack-plugin": "^4.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "vue-awesome-swiper": "^2.6.7",
     "undefined": "^0.1.0",
 
